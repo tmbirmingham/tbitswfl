@@ -3,21 +3,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tbIT SWFL</title>
+    <title>TBIT SWFL | Tim Birmingham Information Technology</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f6f8;
+            color: #1f2933;
+        }
+
+        header {
+            background-color: #0f172a;
+            color: white;
+            padding: 30px 10%;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 32px;
+            letter-spacing: 1px;
+        }
+
+        header h2 {
+            margin-top: 10px;
+            font-weight: normal;
+            font-size: 18px;
+            color: #cbd5e1;
+        }
+
+        .section {
+            padding: 60px 10%;
+            text-align: center;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+
+        .card h3 {
+            margin-top: 0;
+        }
+
+        .coming-soon {
+            font-size: 16px;
+            margin-top: 40px;
+            color: #64748b;
+        }
+
+        footer {
+            background-color: #0f172a;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer a {
+            color: #38bdf8;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background-color: #38bdf8;
+            color: #0f172a;
+            font-weight: bold;
+            border-radius: 6px;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background-color: #0ea5e9;
+        }
+    </style>
 </head>
+
 <body>
-  <center>
-    <h1>tbIT SWFL</h1>
-    <h2>Serving SWFL with various technology services!</h2>
-      <ul>
-        <li>Website management</li>
-        <li>Small business IT</li>
-        <li>In home technology training</li>
-      </ul>
-    <p>More information coming soon!</p>
-      <footer>
-          <p>Contact us:<mailto:tbirmingham@tbitswfl.com>tbirmingham@tbitswfl.com</p>
-      </footer>
-  </center>
+
+<header>
+    <h1>TBIT SWFL</h1>
+    <h2>Tim Birmingham Information Technology</h2>
+    <p>Serving Southwest Florida with reliable and professional technology services.</p>
+</header>
+
+<section class="section">
+    <h2>Our Services</h2>
+
+    <div class="services">
+
+        <div class="card">
+            <h3>Website Management</h3>
+            <p>
+                Ongoing updates, security maintenance, performance optimization,
+                and technical support for small business websites.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Small Business IT</h3>
+            <p>
+                Network setup, workstation configuration, data backups,
+                cybersecurity guidance, and ongoing technical support.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>In-Home Technology Training</h3>
+            <p>
+                Personalized training for individuals and families —
+                helping you feel confident with your devices and software.
+            </p>
+        </div>
+
+    </div>
+
+    <p class="coming-soon">
+        Additional services and information coming soon.
+    </p>
+
+    <a href="mailto:tbirmingham@tbitswfl.com" class="btn">
+        Contact Us
+    </a>
+
+</section>
+
+<footer>
+    <p>
+        Contact: 
+        <a href="mailto:tbirmingham@tbitswfl.com">
+            tbirmingham@tbitswfl.com
+        </a>
+    </p>
+    <p>© 2026 TBIT SWFL. All Rights Reserved.</p>
+</footer>
+
 </body>
 </html>
