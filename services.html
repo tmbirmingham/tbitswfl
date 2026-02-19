@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>TBIT SWFL</title>
+</head>
+
+<body>
+
+<header>
+    <div class="nav-container">
+        <div class="logo">
+            <h1>TBIT SWFL</h1>
+            <span>Southwest Florida IT Services</span>
+        </div>
+
+        <div class="menu-toggle" id="menu-toggle">
+            ☰
+        </div>
+
+        <nav id="nav-menu">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="about.html">About</a>
+            <a href="book.html" class="nav-cta">Book Now</a>
+        </nav>
+    </div>
+</header>
+
+    <section class="page-header">
+        <h1>Our Services</h1>
+        <p>Professional IT support for homes and small businesses in Southwest Florida.</p>
+    </section>
+
+        <section class="services-grid">
+            <div class="card">
+                <h2>Home IT Support</h2>
+                <p>Computer repair, Wi-Fi setup, printer configuration, and device troubleshooting.</p>
+            </div>
+
+            <div class="card">
+                <h2>Small Business IT</h2>
+                <p>Network setup, Microsoft 365 configuration, secure backups, and on-site support.</p>
+            </div>
+
+            <div class="card">
+                <h2>Cybersecurity</h2>
+                <p>Firewall configuration, endpoint protection, and proactive security monitoring.</p>
+            </div>
+
+            <div class="card">
+                <h2>Remote Support</h2>
+                <p>Fast, secure remote assistance to resolve issues without an on-site visit.</p>
+            </div>
+        </section>
+<script>
+    const toggle = document.getElementById("menu-toggle");
+    const nav = document.getElementById("nav-menu");
+
+    // Toggle menu when hamburger clicked
+    toggle.addEventListener("click", (e) => {
+        e.stopPropagation(); // prevent triggering document click
+        nav.classList.toggle("active");
+    });
+
+    // Close menu when clicking a nav link
+    document.querySelectorAll("#nav-menu a").forEach(link => {
+        link.addEventListener("click", () => {
+            nav.classList.remove("active");
+        });
+    });
+
+    // Close menu when clicking outside of it
+    document.addEventListener("click", (e) => {
+        if (!nav.contains(e.target) && !toggle.contains(e.target)) {
+            nav.classList.remove("active");
+        }
+    });
+
+    // Close menu when resizing to desktop
+    window.addEventListener("resize", () => {
+        if (window.innerWidth > 768) {
+            nav.classList.remove("active");
+        }
+    });
+</script>
+
+    </body>
+</html>
