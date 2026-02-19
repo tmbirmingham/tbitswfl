@@ -118,6 +118,13 @@ footer a:hover {
     line-height: 1.6;
 }
 
+.about-content p{
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
 .booking-container {
     padding: 40px;
 }
