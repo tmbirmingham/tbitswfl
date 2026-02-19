@@ -72,21 +72,6 @@ footer a:hover {
     text-decoration: underline;
 }
 
-.btn {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 12px 25px;
-    background-color: #38bdf8;
-    color: #0f172a;
-    font-weight: bold;
-    border-radius: 6px;
-    text-decoration: none;
-}
-
-.btn:hover {
-    background-color: #0ea5e9;
-}
-
 .page-header {
     text-align: center;
     padding: 60px 20px;
@@ -98,17 +83,6 @@ footer a:hover {
     gap: 30px;
     padding: 40px;
     justify-content: center;
-}
-
-.service-card {
-    background-color: #111;
-    padding: 25px;
-    border-radius: 8px;
-    transition: 0.3s ease;
-}
-
-.service-card:hover {
-    transform: translateY(-5px);
 }
 
 .about-content {
