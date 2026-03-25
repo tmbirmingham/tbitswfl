@@ -33,8 +33,9 @@ header h2 {
 }
 
 .services {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 30px;
     margin-top: 40px;
 }
@@ -44,6 +45,10 @@ header h2 {
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    box-sizing: border-box;
+    flex: 1 1 280px;
+    max-width: 400px;
+    min-width: min(100%, 250px);
 }
 
 .card h3 {
@@ -78,11 +83,11 @@ footer a:hover {
 }
 
 .services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    gap: 30px;
+    padding: 1% 0%;
 }
 
 .about-content {
@@ -232,7 +237,7 @@ nav a:hover::after {
         display: flex;
     }
 
-}
+} 
 
 .logoimage {
     display: block;
@@ -253,3 +258,38 @@ nav a:hover::after {
         transform: scale(2);
     }
 }
+
+.homepage-card {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    box-sizing: border-box;
+    max-width: 600px;
+    margin: auto;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #38bdf8;
+    color: #0f172a;
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.25s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    margin-top: 5%;
+}
+
+.btn:hover {
+    background-color: #0ea5e9;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+
+.btn:active {
+    transform: translateY(0);
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
