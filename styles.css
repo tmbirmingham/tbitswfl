@@ -51,9 +51,9 @@
     --header-h: 72px;
 
     /* Brand / logo — adjust these when you swap the logo (see logo.svg) */
-    --logo-size: 40px;                 /* header logo height */
-    --logo-tile-bg: #f1f5f9;           /* tile behind the logo; set to transparent for a logo made for dark backgrounds */
-    --logo-tile-padding: 4px;
+    --logo-size: 44px;                 /* header logo height */
+    --logo-tile-bg: transparent;       /* tile behind the logo; use a light color (e.g. #f1f5f9) for a dark logo */
+    --logo-tile-padding: 0px;
     --logo-tile-radius: 10px;
 }
 
@@ -869,23 +869,36 @@ a:hover {
 }
 
 /* Pricing / packages */
+.price-card h3 {
+    margin-bottom: 0.75rem;
+}
+
 .price-card .price {
-    margin: 0.25rem 0 1rem;
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 0.25rem 0.5rem;
+    margin: 0 0 1.25rem;
+    padding-bottom: 1.25rem;
+    border-bottom: 1px solid var(--border);
     font-size: var(--fs-xl);
     font-weight: 700;
+    line-height: 1.2;
     color: #fff;
     letter-spacing: -0.02em;
 }
 
 .price-card .price small {
-    font-size: var(--fs-sm);
+    font-size: var(--fs-xs);
     font-weight: 500;
     color: var(--text-subtle);
     letter-spacing: 0;
 }
 
 .price-card .price--quote {
-    font-size: var(--fs-md);
+    font-size: var(--fs-lg);
+    min-height: calc(var(--fs-xl) * 1.2);
+    align-items: center;
     color: var(--accent);
 }
 
@@ -895,8 +908,30 @@ a:hover {
     color: var(--text-subtle);
 }
 
-.price-card .btn {
+.price-card > .btn,
+.price-card-actions {
     margin-top: auto;
+}
+
+.price-card > .btn {
+    align-self: stretch;
+}
+
+.price-card p:has(+ .btn),
+.price-card p:has(+ .price-card-actions) {
+    margin-bottom: 1.5rem;
+}
+
+.price-card-actions {
+    display: grid;
+    gap: 0.6rem;
+}
+
+.price-card--other {
+    background:
+        radial-gradient(400px 220px at 100% 0%, rgba(56, 189, 248, 0.14), transparent 70%),
+        linear-gradient(180deg, var(--surface-2), var(--surface));
+    border: 1px dashed rgba(56, 189, 248, 0.45);
 }
 
 .fine-print {
