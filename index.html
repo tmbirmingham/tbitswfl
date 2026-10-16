@@ -3,98 +3,423 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <title>TBIT SWFL | IT Support, Networking &amp; Websites in Southwest Florida</title>
+    <meta name="description" content="TBIT SWFL provides home IT support, small-business IT and networking, website development, automation, and in-home technology training across Southwest Florida. Book a free 15-minute assessment.">
+    <link rel="canonical" href="https://tbitswfl.com/">
+    <meta name="theme-color" content="#070d1c">
+    <meta name="geo.region" content="US-FL">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="TBIT SWFL">
+    <meta property="og:title" content="TBIT SWFL | IT Support, Networking &amp; Websites in Southwest Florida">
+    <meta property="og:description" content="TBIT SWFL provides home IT support, small-business IT and networking, website development, automation, and in-home technology training across Southwest Florida. Book a free 15-minute assessment.">
+    <meta property="og:url" content="https://tbitswfl.com/">
+    <meta property="og:image" content="https://tbitswfl.com/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="TBIT SWFL — IT services for homes and small businesses in Southwest Florida">
+    <meta property="og:locale" content="en_US">
+    <meta name="twitter:card" content="summary_large_image">
+
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
-    <title>TBIT SWFL</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap">
+    <link rel="stylesheet" href="styles.css">
+    <script>document.documentElement.classList.add("js");</script>
+    <script src="script.js" defer></script>
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "@id": "https://tbitswfl.com/#business",
+    "name": "TBIT SWFL",
+    "alternateName": "Tim Birmingham Information Technology",
+    "description": "IT support, networking, website development and management, automation, and technology training for homes and small businesses in Southwest Florida.",
+    "url": "https://tbitswfl.com/",
+    "email": "info@tbitswfl.com",
+    "logo": "https://tbitswfl.com/logo.svg",
+    "image": "https://tbitswfl.com/og-image.png",
+    "founder": {
+        "@type": "Person",
+        "name": "Tim Birmingham"
+    },
+    "areaServed": {
+        "@type": "Place",
+        "name": "Southwest Florida"
+    },
+    "knowsAbout": [
+        "Home IT support",
+        "Small business IT",
+        "Networking",
+        "Microsoft 365",
+        "Website development",
+        "Website management",
+        "Workflow automation",
+        "Technology training"
+    ]
+}
+    </script>
 </head>
-
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 
-<header>
-    <div class="nav-container">
-        <div class="logo">
-            <img src="logo.svg" class="logoimage" alt="TBIT SWFL logo">
-            <div>
-                <h1>TBIT SWFL</h1>
-                <span>Southwest Florida IT Services</span>
-            </div>
-        </div>
+<header class="site-header">
+    <div class="container nav">
+        <a class="brand" href="index.html" aria-label="TBIT SWFL home">
+            <span class="brand-mark"><img src="logo.svg" alt="" width="40" height="40"></span>
+            <span class="brand-text">
+                <span class="brand-name">TBIT SWFL</span>
+                <span class="brand-tag">Southwest Florida IT Services</span>
+            </span>
+        </a>
 
-        <div class="menu-toggle" id="menu-toggle">
-            ☰
-        </div>
+        <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+            <svg class="icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+            <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+        </button>
 
-        <nav id="nav-menu">
-            <a href="index.html">Home</a>
-            <a href="services.html">Services</a>
-            <a href="about.html">About</a>
-            <a href="book.html" class="nav-cta">Book Now</a>
+        <nav class="nav-menu" id="site-nav" aria-label="Main">
+            <ul>
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="book.html" class="btn btn-primary">Book Free Assessment</a></li>
+            </ul>
         </nav>
     </div>
 </header>
 
-<section class="section">
-    <h2>In need of some technology help?</h2>
+<main id="main">
 
-    <div class="homepage-card">
-        <p>
-            Learn more about how TBIT SWFL may be able to help with all of your technology needs. We provide services ranging from home IT support and training, to small business network setup and website management. We are based in Southwest Florida and serve the surrounding area.
-        </p>
-        <p>We are eager to hear how we can be of help to you, send us an email or book a FREE 15 minute technology assessment through the booking page! </p>
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container split">
+            <div>
+                <p class="eyebrow">Southwest Florida IT Services</p>
+                <h1>Technology help that's <span class="accent">clear, reliable, and personal.</span></h1>
+                <p class="hero-lead">TBIT SWFL helps homeowners, individuals, and small businesses across Southwest Florida set up, fix, secure, and understand their technology — with practical solutions explained in plain English.</p>
+                <div class="btn-row">
+                    <a href="book.html" class="btn btn-primary btn-lg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="4.5" width="18" height="16.5" rx="2"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/></svg>Book a Free 15-Minute Assessment</a>
+                    <a href="services.html" class="btn btn-secondary btn-lg">Explore Services<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+                </div>
+                <ul class="tag-list" aria-label="Services at a glance">
+                    <li>Home IT support</li>
+                    <li>Small-business networking</li>
+                    <li>Websites</li>
+                    <li>Automation</li>
+                    <li>In-home training</li>
+                </ul>
+            </div>
+            <figure class="hero-visual">
+                <svg viewBox="0 0 520 420" role="img" aria-labelledby="net-title">
+                    <title id="net-title">Diagram: TBIT SWFL connects your home, devices, small business, website, cloud services, and automations</title>
+                    <defs>
+                        <radialGradient id="hub-glow" cx="50%" cy="50%" r="50%">
+                            <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.45"/>
+                            <stop offset="100%" stop-color="#3b82f6" stop-opacity="0"/>
+                        </radialGradient>
+                    </defs>
+                    <g>
+                        <path class="net-line" d="M260 210 L260 48"/>
+                        <path class="net-flow" d="M260 210 L260 48" style="animation-delay:-0.00s"/>
+                        <path class="net-line" d="M260 210 L440 120"/>
+                        <path class="net-flow" d="M260 210 L440 120" style="animation-delay:-0.55s"/>
+                        <path class="net-line" d="M260 210 L440 300"/>
+                        <path class="net-flow" d="M260 210 L440 300" style="animation-delay:-1.10s"/>
+                        <path class="net-line" d="M260 210 L260 372"/>
+                        <path class="net-flow" d="M260 210 L260 372" style="animation-delay:-1.65s"/>
+                        <path class="net-line" d="M260 210 L80 300"/>
+                        <path class="net-flow" d="M260 210 L80 300" style="animation-delay:-2.20s"/>
+                        <path class="net-line" d="M260 210 L80 120"/>
+                        <path class="net-flow" d="M260 210 L80 120" style="animation-delay:-2.75s"/>
+                    </g>
+                    <circle cx="260" cy="210" r="95" fill="url(#hub-glow)"/>
+                    <circle class="net-hub-ring" cx="260" cy="210" r="48" stroke-width="1.5"/>
+                    <circle cx="260" cy="210" r="48" fill="#0f1b36" stroke="#38bdf8" stroke-opacity="0.6" stroke-width="1.5"/>
+                    <g fill="none" stroke="#7dd3fc" stroke-width="3" stroke-linecap="round">
+                        <path d="M236 202a34 34 0 0 1 48 0"/>
+                        <path d="M245 211a21 21 0 0 1 30 0"/>
+                    </g>
+                    <circle cx="260" cy="222" r="3.5" fill="#7dd3fc"/>
+                    <g class="net-node">
+                        <rect x="194" y="28" width="132" height="40" rx="10"/>
+                        <circle class="dot" cx="212" cy="48" r="4"/>
+                        <text x="224" y="52.5">Cloud &amp; email</text>
+                    </g>
+                    <g class="net-node">
+                        <rect x="374" y="100" width="132" height="40" rx="10"/>
+                        <circle class="dot" cx="392" cy="120" r="4"/>
+                        <text x="404" y="124.5">Website</text>
+                    </g>
+                    <g class="net-node">
+                        <rect x="374" y="280" width="132" height="40" rx="10"/>
+                        <circle class="dot" cx="392" cy="300" r="4"/>
+                        <text x="404" y="304.5">Devices</text>
+                    </g>
+                    <g class="net-node">
+                        <rect x="194" y="352" width="132" height="40" rx="10"/>
+                        <circle class="dot" cx="212" cy="372" r="4"/>
+                        <text x="224" y="376.5">Small business</text>
+                    </g>
+                    <g class="net-node">
+                        <rect x="14" y="280" width="132" height="40" rx="10"/>
+                        <circle class="dot" cx="32" cy="300" r="4"/>
+                        <text x="44" y="304.5">Home</text>
+                    </g>
+                    <g class="net-node">
+                        <rect x="14" y="100" width="132" height="40" rx="10"/>
+                        <circle class="dot" cx="32" cy="120" r="4"/>
+                        <text x="44" y="124.5">Automation</text>
+                    </g>
+                </svg>
+            </figure>
+        </div>
+    </section>
+
+    <!-- Who we help -->
+    <section class="section section--alt" aria-labelledby="who-title">
+        <div class="container">
+            <div class="section-head section-head--center">
+                <p class="eyebrow">Who we help</p>
+                <h2 id="who-title">Support for your home and your business</h2>
+                <p>Whether it's a single laptop or an office network, you get the same careful, personal attention.</p>
+            </div>
+            <div class="grid grid--2">
+                <article class="card audience-card reveal">
+                    <span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/><path d="M10 21v-6h4v6"/></svg></span>
+                    <h3>Homeowners &amp; individuals</h3>
+                    <p>Get new devices set up, solve frustrating computer problems, sort out your Wi-Fi, and learn to use your technology with confidence — at your own pace.</p>
+                    <a class="link-arrow" href="services.html#home-support">Home &amp; personal services</a>
+                </article>
+                <article class="card audience-card reveal">
+                    <span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="4" y="3" width="16" height="18" rx="1.5"/><path d="M9 7h1M14 7h1M9 11h1M14 11h1M9 15h1M14 15h1"/><path d="M10 21v-3h4v3"/></svg></span>
+                    <h3>Small businesses</h3>
+                    <p>Keep your network, devices, Microsoft 365, and website running smoothly, with ongoing support from someone who knows your setup.</p>
+                    <a class="link-arrow" href="services.html#business-it">Small-business services</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services overview -->
+    <section class="section" aria-labelledby="services-title">
+        <div class="container">
+            <div class="section-head">
+                <p class="eyebrow">What we do</p>
+                <h2 id="services-title">Services built around real-world needs</h2>
+                <p>From everyday troubleshooting to websites and automation, here's how TBIT SWFL can help.</p>
+            </div>
+            <div class="grid grid--3">
+                <article class="card card--lift reveal">
+                    <span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/><path d="M10 21v-6h4v6"/></svg></span>
+                    <h3>Home &amp; Personal IT Support</h3>
+                    <p>Help with computers, devices, Wi-Fi, and software — set up correctly and explained clearly.</p>
+                    <a class="link-arrow" href="services.html#home-support">Learn more<span class="sr-only"> about Home &amp; Personal IT Support</span></a>
+                </article>
+                <article class="card card--lift reveal">
+                    <span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="9" y="2.5" width="6" height="5" rx="1"/><rect x="2.5" y="16.5" width="6" height="5" rx="1"/><rect x="15.5" y="16.5" width="6" height="5" rx="1"/><path d="M12 7.5V12M5.5 16.5V12h13v4.5"/></svg></span>
+                    <h3>Small-Business IT &amp; Networking</h3>
+                    <p>Network setup, Microsoft 365 configuration, on-site support, and ongoing maintenance for your team.</p>
+                    <a class="link-arrow" href="services.html#business-it">Learn more<span class="sr-only"> about Small-Business IT &amp; Networking</span></a>
+                </article>
+                <article class="card card--lift reveal">
+                    <span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/><path d="M6.5 6.5h.01M9 6.5h.01"/><path d="m10 12.5-2 2 2 2M14 12.5l2 2-2 2"/></svg></span>
+                    <h3>Website Development &amp; Management</h3>
+                    <p>New websites built around your business, plus ongoing updates, security maintenance, and support.</p>
+                    <a class="link-arrow" href="services.html#websites">Learn more<span class="sr-only"> about Website Development &amp; Management</span></a>
+                </article>
+                <article class="card card--lift reveal">
+                    <span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="6" cy="6" r="2.5"/><circle cx="18" cy="18" r="2.5"/><path d="M8.5 6H15a3 3 0 0 1 3 3v6.5"/><path d="M6 8.5V15a3 3 0 0 0 3 3h6.5"/></svg></span>
+                    <h3>Automation &amp; Custom Software</h3>
+                    <p>Software and automations tailored to your workflow, so repetitive tasks take less of your time.</p>
+                    <a class="link-arrow" href="services.html#automation">Learn more<span class="sr-only"> about Automation &amp; Custom Software</span></a>
+                </article>
+                <article class="card card--lift reveal">
+                    <span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 9l10-5 10 5-10 5-10-5z"/><path d="M6 11v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5"/><path d="M22 9v6"/></svg></span>
+                    <h3>Technology Setup &amp; Training</h3>
+                    <p>One-on-one, in-home sessions that help you feel confident using your own devices and software.</p>
+                    <a class="link-arrow" href="services.html#training">Learn more<span class="sr-only"> about Technology Setup &amp; Training</span></a>
+                </article>
+                <article class="card card--center reveal">
+                    <h3>Not sure what you need?</h3>
+                    <p>That's what the free 15-minute assessment is for. Tell us what's going on and we'll point you in the right direction.</p>
+                    <a class="link-arrow" href="book.html">Book a free assessment</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why TBIT -->
+    <section class="section section--alt" aria-labelledby="why-title">
+        <div class="container split">
+            <div class="section-head section-head--flush">
+                <p class="eyebrow">Why TBIT SWFL</p>
+                <h2 id="why-title">Capable technology help, without the corporate complexity</h2>
+                <p>TBIT SWFL was founded to give homes and small businesses dependable, security-focused IT support from someone they can actually talk to.</p>
+                <p class="mt-md"><a class="link-arrow" href="about.html">More about TBIT SWFL</a></p>
+            </div>
+            <div class="grid grid--loose">
+                    <div class="feature reveal">
+                        <span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/></svg></span>
+                        <div>
+                            <h3>Personal service</h3>
+                            <p>You work with a real person who takes the time to understand your situation — not a ticket queue or a call center.</p>
+                        </div>
+                    </div>
+                    <div class="feature reveal">
+                        <span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.4A8 8 0 1 1 21 12z"/><path d="M8.5 12h.01M12 12h.01M15.5 12h.01"/></svg></span>
+                        <div>
+                            <h3>Clear communication</h3>
+                            <p>Technology explained in plain English. You'll know what's being done, why it matters, and what your options are.</p>
+                        </div>
+                    </div>
+                    <div class="feature reveal">
+                        <span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></span>
+                        <div>
+                            <h3>Transparency</h3>
+                            <p>Straightforward recommendations and upfront conversations about scope and pricing before any work begins.</p>
+                        </div>
+                    </div>
+                    <div class="feature reveal">
+                        <span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.4-.6-.6-2.4z"/></svg></span>
+                        <div>
+                            <h3>Practical solutions</h3>
+                            <p>The right fit for your home or business — reliable, secure, and sensible, without unnecessary complexity.</p>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Getting started -->
+    <section class="section" aria-labelledby="start-title">
+        <div class="container">
+            <div class="section-head section-head--center">
+                <p class="eyebrow">Getting started</p>
+                <h2 id="start-title">Three simple steps</h2>
+            </div>
+            <ol class="steps grid grid--3">
+                <li class="card step reveal">
+                    <h3>Book a free assessment</h3>
+                    <p>Pick a time for a free 15-minute technology assessment, or send an email describing what you need.</p>
+                </li>
+                <li class="card step reveal">
+                    <h3>Talk it through</h3>
+                    <p>We'll discuss what's going on, answer your questions, and outline practical options in plain English.</p>
+                </li>
+                <li class="card step reveal">
+                    <h3>Get it solved</h3>
+                    <p>Once you're comfortable with the plan, we get to work — and make sure you understand the result.</p>
+                </li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- Service area -->
+    <section class="section section--alt" aria-labelledby="area-title-h">
+        <div class="container split">
+            <div>
+                <p class="eyebrow">Service area</p>
+                <h2 id="area-title-h">Local to Southwest Florida</h2>
+                <p class="text-lead">TBIT SWFL is based in Southwest Florida and serves homes and small businesses throughout the surrounding area.</p>
+                <ul class="check-list">
+                    <li>In-home technology help and training</li>
+                    <li>On-site support for small businesses</li>
+                    <li>Local, personal service from someone in your community</li>
+                </ul>
+                <p class="text-muted">Not sure if you're in the service area? <a href="mailto:info@tbitswfl.com?subject=Service%20area%20question">Send a quick email</a> and ask.</p>
+            </div>
+            <div class="area-visual">
+                <svg viewBox="0 0 300 300" role="img" aria-labelledby="area-title">
+                        <title id="area-title">Service area: Southwest Florida</title>
+                        <defs>
+                            <radialGradient id="area-glow" cx="50%" cy="50%" r="50%">
+                                <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.22"/>
+                                <stop offset="100%" stop-color="#38bdf8" stop-opacity="0"/>
+                            </radialGradient>
+                        </defs>
+                        <circle cx="150" cy="150" r="140" fill="url(#area-glow)"/>
+                        <g fill="none" stroke="#7dd3fc" stroke-opacity="0.28" stroke-dasharray="3 6">
+                            <circle cx="150" cy="150" r="45"/>
+                            <circle cx="150" cy="150" r="85"/>
+                            <circle cx="150" cy="150" r="125"/>
+                        </g>
+                        <g fill="#38bdf8">
+                            <circle cx="191" cy="131" r="3.5"/>
+                            <circle cx="88" cy="94" r="3"/>
+                            <circle cx="222" cy="205" r="3"/>
+                            <circle cx="70" cy="200" r="3.5"/>
+                            <circle cx="160" cy="62" r="3"/>
+                            <circle cx="125" cy="262" r="3"/>
+                            <circle cx="262" cy="118" r="2.5"/>
+                        </g>
+                        <path d="M150 168s-22-19-22-36a22 22 0 0 1 44 0c0 17-22 36-22 36z" fill="#3b82f6" stroke="#93c5fd" stroke-width="1.5"/>
+                        <circle cx="150" cy="132" r="8" fill="#0f1b36"/>
+                        <text x="150" y="200" text-anchor="middle" fill="#e8eef7" font-family="Inter, system-ui, sans-serif" font-size="15" font-weight="700" letter-spacing="2">SWFL</text>
+                    </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section class="section" aria-labelledby="contact-title">
+        <div class="container">
+            <div class="cta-panel reveal">
+                <p class="eyebrow">Get in touch</p>
+                <h2 id="contact-title">Let's solve your technology problem</h2>
+                <p>Book a free 15-minute technology assessment, or email us with a few details about what you need. We're glad to help.</p>
+                <div class="btn-row">
+                    <a href="book.html" class="btn btn-primary btn-lg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="4.5" width="18" height="16.5" rx="2"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/></svg>Book a Free Assessment</a>
+                    <a href="mailto:info@tbitswfl.com" class="btn btn-secondary btn-lg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6.5 8.5 6.5 8.5-6.5"/></svg>Email Us</a>
+                </div>
+                <p class="cta-email">Prefer email? Reach us at <a href="mailto:info@tbitswfl.com">info@tbitswfl.com</a></p>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-about">
+                <a class="brand" href="index.html" aria-label="TBIT SWFL home">
+                    <span class="brand-mark"><img src="logo.svg" alt="" width="40" height="40"></span>
+                    <span class="brand-text">
+                        <span class="brand-name">TBIT SWFL</span>
+                        <span class="brand-tag">Tim Birmingham Information Technology</span>
+                    </span>
+                </a>
+                <p>Practical IT support, networking, websites, automation, and technology training for homes and small businesses in Southwest Florida.</p>
+            </div>
+
+            <div>
+                <h2>Explore</h2>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="book.html">Book a Free Assessment</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h2>Contact</h2>
+                <ul class="footer-links">
+                    <li><a href="mailto:info@tbitswfl.com">info@tbitswfl.com</a></li>
+                    <li><a href="book.html">Schedule online</a></li>
+                    <li>Serving Southwest Florida</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; <span data-year>2026</span> TBIT SWFL. All Rights Reserved.</p>
+            <p>Home &amp; small-business IT services in Southwest Florida</p>
+        </div>
     </div>
-
-    <a href="services.html" class="btn">
-        Learn More!
-    </a>
-    <br>
-    <a href="mailto:info@tbitswfl.com" class="btn">
-        Email Us
-    </a>
-
-</section>
-
-<footer>
-    <p>
-        Contact: 
-        <a href="mailto:info@tbitswfl.com">
-            info@tbitswfl.com
-        </a>
-    </p>
-    <p>© 2026 TBIT SWFL. All Rights Reserved.</p>
 </footer>
-
-<script>
-    const toggle = document.getElementById("menu-toggle");
-    const nav = document.getElementById("nav-menu");
-
-    // Toggle menu when hamburger clicked
-    toggle.addEventListener("click", (e) => {
-        e.stopPropagation(); // prevent triggering document click
-        nav.classList.toggle("active");
-    });
-
-    // Close menu when clicking a nav link
-    document.querySelectorAll("#nav-menu a").forEach(link => {
-        link.addEventListener("click", () => {
-            nav.classList.remove("active");
-        });
-    });
-
-    // Close menu when clicking outside of it
-    document.addEventListener("click", (e) => {
-        if (!nav.contains(e.target) && !toggle.contains(e.target)) {
-            nav.classList.remove("active");
-        }
-    });
-
-    // Close menu when resizing to desktop
-    window.addEventListener("resize", () => {
-        if (window.innerWidth > 768) {
-            nav.classList.remove("active");
-        }
-    });
-</script>
-
 
 </body>
 </html>

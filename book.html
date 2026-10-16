@@ -3,98 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <title>Book a Free 15-Minute Technology Assessment | TBIT SWFL</title>
+    <meta name="description" content="Schedule a free 15-minute technology assessment with TBIT SWFL. Get help with home IT, small-business networking, websites, automation, or training in Southwest Florida.">
+    <link rel="canonical" href="https://tbitswfl.com/book.html">
+    <meta name="theme-color" content="#070d1c">
+    <meta name="geo.region" content="US-FL">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="TBIT SWFL">
+    <meta property="og:title" content="Book a Free 15-Minute Technology Assessment | TBIT SWFL">
+    <meta property="og:description" content="Schedule a free 15-minute technology assessment with TBIT SWFL. Get help with home IT, small-business networking, websites, automation, or training in Southwest Florida.">
+    <meta property="og:url" content="https://tbitswfl.com/book.html">
+    <meta property="og:image" content="https://tbitswfl.com/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="TBIT SWFL — IT services for homes and small businesses in Southwest Florida">
+    <meta property="og:locale" content="en_US">
+    <meta name="twitter:card" content="summary_large_image">
+
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
-    <title>Book a Meeting</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap">
+    <link rel="stylesheet" href="styles.css">
+    <script>document.documentElement.classList.add("js");</script>
+    <script src="script.js" defer></script>
 </head>
-
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 
-<header>
-    <div class="nav-container">
-        <div class="logo">
-            <img src="logo.svg" class="logoimage" alt="TBIT SWFL logo">
-            <div>
-                <h1>TBIT SWFL</h1>
-                <span>Southwest Florida IT Services</span>
-            </div>
-        </div>
+<header class="site-header">
+    <div class="container nav">
+        <a class="brand" href="index.html" aria-label="TBIT SWFL home">
+            <span class="brand-mark"><img src="logo.svg" alt="" width="40" height="40"></span>
+            <span class="brand-text">
+                <span class="brand-name">TBIT SWFL</span>
+                <span class="brand-tag">Southwest Florida IT Services</span>
+            </span>
+        </a>
 
-        <div class="menu-toggle" id="menu-toggle">
-            ☰
-        </div>
+        <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+            <svg class="icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+            <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+        </button>
 
-        <nav id="nav-menu">
-            <a href="index.html">Home</a>
-            <a href="services.html">Services</a>
-            <a href="about.html">About</a>
-            <a href="book.html" class="nav-cta">Book Now</a>
+        <nav class="nav-menu" id="site-nav" aria-label="Main">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="book.html" class="btn btn-primary" aria-current="page">Book Free Assessment</a></li>
+            </ul>
         </nav>
     </div>
 </header>
 
+<main id="main">
 
-<section class="page-header">
-    <h1>Schedule an Appointment</h1>
-    <p>Book a time that works best for you. We'll confirm your appointment via email.</p>
-</section>
-
-<section class="booking-wrapper">
-    <section class="booking-container">
-        <!-- Google Calendar Appointment Scheduling begin -->
-            <iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1Dt89_L6CXlhHSXzOYFkTwx_t_c9U2_-6mgcIFVtcz67k1CI91IP9YixrUSuaypk6B2h2EOH2I?gv=true"
-            style="border: 0" 
-            width="95%" 
-            height="600" 
-            frameborder="0">
-            </iframe>
-        <!-- end Google Calendar Appointment Scheduling -->
+    <section class="page-hero">
+        <div class="container">
+            <p class="eyebrow">Book online</p>
+            <h1>Schedule a free 15-minute technology assessment</h1>
+            <p>Choose a time that works best for you. We'll confirm your appointment via email.</p>
+        </div>
     </section>
-</section>
 
-<footer>
-    <p>
-        Contact: 
-        <a href="mailto:info@tbitswfl.com">
-            info@tbitswfl.com
-        </a>
-    </p>
-    <p>© 2026 TBIT SWFL. All Rights Reserved.</p>
+    <section class="section section--tight-top">
+        <div class="container booking-layout">
+            <aside class="booking-aside">
+                <div class="card">
+                    <span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="4.5" width="18" height="16.5" rx="2"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/></svg></span>
+                    <h2>What to expect</h2>
+                    <ul class="check-list">
+                        <li>A quick conversation about what's going on with your technology</li>
+                        <li>Answers to your questions in plain English</li>
+                        <li>Practical options and a clear next step</li>
+                    </ul>
+                    <p>Good topics include computer problems, Wi-Fi and networking, Microsoft 365, websites, automation, and training.</p>
+                </div>
+                <div class="card">
+                    <span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6.5 8.5 6.5 8.5-6.5"/></svg></span>
+                    <h2>Prefer email?</h2>
+                    <p>Send a few details about what you need and we'll get back to you.</p>
+                    <p><a href="mailto:info@tbitswfl.com?subject=Technology%20help%20request">info@tbitswfl.com</a></p>
+                </div>
+            </aside>
+
+            <div>
+                <div class="booking-frame">
+                    <!-- Google Calendar Appointment Scheduling begin -->
+                    <iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1Dt89_L6CXlhHSXzOYFkTwx_t_c9U2_-6mgcIFVtcz67k1CI91IP9YixrUSuaypk6B2h2EOH2I?gv=true"
+                        title="Book a free 15-minute technology assessment with TBIT SWFL (Google Calendar)"
+                        loading="lazy"></iframe>
+                    <!-- end Google Calendar Appointment Scheduling -->
+                </div>
+                <p class="booking-fallback">Calendar not loading? <a href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1Dt89_L6CXlhHSXzOYFkTwx_t_c9U2_-6mgcIFVtcz67k1CI91IP9YixrUSuaypk6B2h2EOH2I?gv=true" target="_blank" rel="noopener">Open the booking page in a new tab</a> or email <a href="mailto:info@tbitswfl.com">info@tbitswfl.com</a>.</p>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-about">
+                <a class="brand" href="index.html" aria-label="TBIT SWFL home">
+                    <span class="brand-mark"><img src="logo.svg" alt="" width="40" height="40"></span>
+                    <span class="brand-text">
+                        <span class="brand-name">TBIT SWFL</span>
+                        <span class="brand-tag">Tim Birmingham Information Technology</span>
+                    </span>
+                </a>
+                <p>Practical IT support, networking, websites, automation, and technology training for homes and small businesses in Southwest Florida.</p>
+            </div>
+
+            <div>
+                <h2>Explore</h2>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="book.html">Book a Free Assessment</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h2>Contact</h2>
+                <ul class="footer-links">
+                    <li><a href="mailto:info@tbitswfl.com">info@tbitswfl.com</a></li>
+                    <li><a href="book.html">Schedule online</a></li>
+                    <li>Serving Southwest Florida</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; <span data-year>2026</span> TBIT SWFL. All Rights Reserved.</p>
+            <p>Home &amp; small-business IT services in Southwest Florida</p>
+        </div>
+    </div>
 </footer>
-
-
-<script>
-    const toggle = document.getElementById("menu-toggle");
-    const nav = document.getElementById("nav-menu");
-
-    // Toggle menu when hamburger clicked
-    toggle.addEventListener("click", (e) => {
-        e.stopPropagation(); // prevent triggering document click
-        nav.classList.toggle("active");
-    });
-
-    // Close menu when clicking a nav link
-    document.querySelectorAll("#nav-menu a").forEach(link => {
-        link.addEventListener("click", () => {
-            nav.classList.remove("active");
-        });
-    });
-
-    // Close menu when clicking outside of it
-    document.addEventListener("click", (e) => {
-        if (!nav.contains(e.target) && !toggle.contains(e.target)) {
-            nav.classList.remove("active");
-        }
-    });
-
-    // Close menu when resizing to desktop
-    window.addEventListener("resize", () => {
-        if (window.innerWidth > 768) {
-            nav.classList.remove("active");
-        }
-    });
-</script>
-
 
 </body>
 </html>

@@ -3,147 +3,314 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <title>IT Services in Southwest Florida | TBIT SWFL</title>
+    <meta name="description" content="Home and personal IT support, small-business IT and networking, website development and management, automation, and in-home technology training in Southwest Florida.">
+    <link rel="canonical" href="https://tbitswfl.com/services.html">
+    <meta name="theme-color" content="#070d1c">
+    <meta name="geo.region" content="US-FL">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="TBIT SWFL">
+    <meta property="og:title" content="IT Services in Southwest Florida | TBIT SWFL">
+    <meta property="og:description" content="Home and personal IT support, small-business IT and networking, website development and management, automation, and in-home technology training in Southwest Florida.">
+    <meta property="og:url" content="https://tbitswfl.com/services.html">
+    <meta property="og:image" content="https://tbitswfl.com/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="TBIT SWFL — IT services for homes and small businesses in Southwest Florida">
+    <meta property="og:locale" content="en_US">
+    <meta name="twitter:card" content="summary_large_image">
+
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
-    <title>Services</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap">
+    <link rel="stylesheet" href="styles.css">
+    <script>document.documentElement.classList.add("js");</script>
+    <script src="script.js" defer></script>
 </head>
-
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 
-<header>
-    <div class="nav-container">
-        <div class="logo">
-            <img src="logo.svg" class="logoimage" alt="TBIT SWFL logo">
-            <div>
-                <h1>TBIT SWFL</h1>
-                <span>Southwest Florida IT Services</span>
-            </div>
-        </div>
+<header class="site-header">
+    <div class="container nav">
+        <a class="brand" href="index.html" aria-label="TBIT SWFL home">
+            <span class="brand-mark"><img src="logo.svg" alt="" width="40" height="40"></span>
+            <span class="brand-text">
+                <span class="brand-name">TBIT SWFL</span>
+                <span class="brand-tag">Southwest Florida IT Services</span>
+            </span>
+        </a>
 
-        <div class="menu-toggle" id="menu-toggle">
-            ☰
-        </div>
+        <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+            <svg class="icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+            <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+        </button>
 
-        <nav id="nav-menu">
-            <a href="index.html">Home</a>
-            <a href="services.html">Services</a>
-            <a href="about.html">About</a>
-            <a href="book.html" class="nav-cta">Book Now</a>
+        <nav class="nav-menu" id="site-nav" aria-label="Main">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html" aria-current="page">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="book.html" class="btn btn-primary">Book Free Assessment</a></li>
+            </ul>
         </nav>
     </div>
 </header>
 
-<section class="page-header">
-    <h1>Our Services</h1>
-    <p>Professional IT support for homes and small businesses in Southwest Florida.</p>
-</section>
+<main id="main">
 
-<section class="section">
-    <section class="services-grid">
-        <div class="card">
-            <h2>Home IT Support</h2>
-            <p>Personalized training for individuals and families —
-            helping you feel confident with your devices and software.</p>
-        </div>
-
-        <div class="card">
-            <h2>Small Business IT</h2>
-            <p>Network setup, Microsoft 365 configuration, and on-site support.</p>
-        </div>
-
-        <div class="card">
-            <h2>Website Management</h2>
-            <p>Ongoing updates, security maintenance, performance optimization,
-            and technical support for small business websites.</p>
+    <section class="page-hero">
+        <div class="container">
+            <p class="eyebrow">Services</p>
+            <h1>Practical IT services for homes and small businesses</h1>
+            <p>Professional IT support throughout Southwest Florida — explained in plain English and focused on what actually helps.</p>
+            <ul class="service-nav" aria-label="Jump to a service">
+                <li><a href="#home-support">Home &amp; Personal IT Support</a></li>
+                <li><a href="#business-it">Small-Business IT &amp; Networking</a></li>
+                <li><a href="#websites">Website Development &amp; Management</a></li>
+                <li><a href="#automation">Automation &amp; Custom Software</a></li>
+                <li><a href="#training">Technology Setup &amp; Training</a></li>
+                <li><a href="#packages">Packages &amp; pricing</a></li>
+            </ul>
         </div>
     </section>
-</section> 
 
-<section class="page-header">
-    <h1>Packages</h1>
-    <p>Flexible and affordable options are available. For best pricing, please contact us.</p>
-</section>
-
-<section class="section">
-    <section class="services-grid">
-        <div class="card">
-            <h2>Computer Help Session</h2>
-            <h3>$30</h3>
-            <p>Schedule a one-on-one session with our IT specialist to get personalized help with your computer issues.</p>
-            <p>Examples of this include new device setup, software installations, troubleshooting, and general technical help.</p>
+    <section class="section" aria-label="Service categories">
+        <div class="container">
+            <article class="service-block reveal" id="home-support" aria-labelledby="home-support-h">
+                <div>
+                    <span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/><path d="M10 21v-6h4v6"/></svg></span>
+                    <h2 id="home-support-h">Home &amp; Personal IT Support</h2>
+                    <p class="lead">When your technology isn't cooperating, you shouldn't have to figure it out alone. Get patient, hands-on help with the devices you rely on every day.</p>
+                </div>
+                <div class="grid grid--2">
+                    <div>
+                        <h3>What's included</h3>
+                        <ul class="check-list">
+                        <li>New device setup</li>
+                        <li>Software installation</li>
+                        <li>Troubleshooting and general technical help</li>
+                        <li>Wi-Fi and home network help</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>How it helps</h3>
+                        <ul class="check-list">
+                        <li>Less time stuck on frustrating problems</li>
+                        <li>Devices set up correctly from the start</li>
+                        <li>Clear explanations of what was fixed</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+            <article class="service-block reveal" id="business-it" aria-labelledby="business-it-h">
+                <div>
+                    <span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="9" y="2.5" width="6" height="5" rx="1"/><rect x="2.5" y="16.5" width="6" height="5" rx="1"/><rect x="15.5" y="16.5" width="6" height="5" rx="1"/><path d="M12 7.5V12M5.5 16.5V12h13v4.5"/></svg></span>
+                    <h2 id="business-it-h">Small-Business IT &amp; Networking</h2>
+                    <p class="lead">Keep your business running with a reliable network, properly configured tools, and support from someone who understands your setup.</p>
+                </div>
+                <div class="grid grid--2">
+                    <div>
+                        <h3>What's included</h3>
+                        <ul class="check-list">
+                        <li>Network setup</li>
+                        <li>Microsoft 365 configuration</li>
+                        <li>On-site support</li>
+                        <li>Ongoing contracted IT support: regular maintenance, security updates, performance optimization, and technical support for your devices</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>How it helps</h3>
+                        <ul class="check-list">
+                        <li>Fewer interruptions to your workday</li>
+                        <li>A more secure, well-maintained environment</li>
+                        <li>One trusted point of contact for IT questions</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+            <article class="service-block reveal" id="websites" aria-labelledby="websites-h">
+                <div>
+                    <span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/><path d="M6.5 6.5h.01M9 6.5h.01"/><path d="m10 12.5-2 2 2 2M14 12.5l2 2-2 2"/></svg></span>
+                    <h2 id="websites-h">Website Development &amp; Management</h2>
+                    <p class="lead">A professional website helps customers find and trust your business. Get one built for you — and keep it maintained afterwards.</p>
+                </div>
+                <div class="grid grid--2">
+                    <div>
+                        <h3>What's included</h3>
+                        <ul class="check-list">
+                        <li>Website creation: consultation, design, development, and hosting options</li>
+                        <li>Ongoing website management: regular maintenance, security updates, performance optimization, and technical support</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>How it helps</h3>
+                        <ul class="check-list">
+                        <li>A site that reflects your business</li>
+                        <li>Updates handled for you</li>
+                        <li>Help when something needs to change</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+            <article class="service-block reveal" id="automation" aria-labelledby="automation-h">
+                <div>
+                    <span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="6" cy="6" r="2.5"/><circle cx="18" cy="18" r="2.5"/><path d="M8.5 6H15a3 3 0 0 1 3 3v6.5"/><path d="M6 8.5V15a3 3 0 0 0 3 3h6.5"/></svg></span>
+                    <h2 id="automation-h">Automation &amp; Custom Software</h2>
+                    <p class="lead">If you're repeating the same tasks over and over, there may be a better way. Get software or automation tailored to how you actually work.</p>
+                </div>
+                <div class="grid grid--2">
+                    <div>
+                        <h3>What's included</h3>
+                        <ul class="check-list">
+                        <li>Consultation to understand your workflow</li>
+                        <li>Development of custom software or automations</li>
+                        <li>Testing and deployment</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>How it helps</h3>
+                        <ul class="check-list">
+                        <li>Time back from repetitive work</li>
+                        <li>Tools that fit your process</li>
+                        <li>Fewer manual errors</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+            <article class="service-block reveal" id="training" aria-labelledby="training-h">
+                <div>
+                    <span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 9l10-5 10 5-10 5-10-5z"/><path d="M6 11v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5"/><path d="M22 9v6"/></svg></span>
+                    <h2 id="training-h">Technology Setup &amp; Training</h2>
+                    <p class="lead">Personalized training for individuals and families — helping you feel confident with your devices and software, in your own home.</p>
+                </div>
+                <div class="grid grid--2">
+                    <div>
+                        <h3>What's included</h3>
+                        <ul class="check-list">
+                        <li>One-on-one, in-home training sessions</li>
+                        <li>Getting comfortable with new devices</li>
+                        <li>Learning the software and apps you use</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>How it helps</h3>
+                        <ul class="check-list">
+                        <li>Learn at your own pace</li>
+                        <li>Training on your own devices</li>
+                        <li>Confidence to handle everyday tasks yourself</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
         </div>
-
-        <div class="card">
-            <h2>Website Creation</h2>
-            <h3>Starting at $200</h3>
-            <p>One time website development project.</p>
-            <p>Service includes: Consultation, Design process, development, hosting options, </p>
-            <p><em> Pricing may vary depending on what functionality is needed.</em></p>
-        </div>
-
-        <div class="card">
-            <h2>Contracted IT Support</h2>
-            <h3><a href="mailto:info@tbitswfl.com" class="">Request info for pricing</a></h3>
-            <p>Monthly subscription for ongoing IT support.</p>
-            <p>Includes: Regular maintenance, security updates, performance optimization, and technical support for your devices.</p>
-        </div>
-
-        <div class="card">
-            <h2>Website Management</h2>
-            <h3><a href="mailto:info@tbitswfl.com">Request info for pricing</a></h3>
-            <p>Monthly subscription for continuous website management.</p>
-            <p>Includes: Regular maintenance, security updates, performance optimization, and website.</p>
-        </div>
-
-        <div class="card">
-            <h2>Custom Software Solutions</h2>
-            <h3><a href="mailto:info@tbitswfl.com">Request info for pricing</a></h3>
-            <p>Software or automation that is tailored to your specific needs.</p>
-            <p>Includes: Consultation, development, testing, and deployment.</p>
     </section>
-</section>
 
-<footer>
-    <p>
-        Contact: 
-        <a href="mailto:info@tbitswfl.com">
-            info@tbitswfl.com
-        </a>
-    </p>
-    <p>© 2026 TBIT SWFL. All Rights Reserved.</p>
+    <section class="section section--alt" id="packages" aria-labelledby="packages-title">
+        <div class="container">
+            <div class="section-head section-head--center">
+                <p class="eyebrow">Packages</p>
+                <h2 id="packages-title">Packages &amp; pricing</h2>
+                <p>Flexible and affordable options are available. For the best pricing, please contact us.</p>
+            </div>
+            <div class="grid grid--3">
+                <article class="card price-card reveal">
+                    <h3>Computer Help Session</h3>
+                    <p class="price">$50</p>
+                    <p>Schedule a one-on-one session with our IT specialist to get personalized help with your computer issues.</p>
+                    <p>Examples include new device setup, software installations, troubleshooting, and general technical help.</p>
+                    <a href="mailto:info@tbitswfl.com?subject=Computer%20Help%20Session%20request" class="btn btn-primary"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6.5 8.5 6.5 8.5-6.5"/></svg>Request a session</a>
+                </article>
+                <article class="card price-card reveal">
+                    <h3>Website Creation</h3>
+                    <p class="price"><small>Starting at</small> $300</p>
+                    <p>One-time website development project.</p>
+                    <p>Includes consultation, design, development, and hosting options.</p>
+                    <p><span class="note">Pricing may vary depending on what functionality is needed.</span></p>
+                    <a href="mailto:info@tbitswfl.com?subject=Pricing%20request%3A%20Website%20Creation" class="btn btn-secondary"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6.5 8.5 6.5 8.5-6.5"/></svg>Request pricing</a>
+                </article>
+                <article class="card price-card reveal">
+                    <h3>Contracted IT Support</h3>
+                    <p class="price price--quote">Request info for pricing</p>
+                    <p>Monthly subscription for ongoing IT support.</p>
+                    <p>Includes regular maintenance, security updates, performance optimization, and technical support for your devices.</p>
+                    <a href="mailto:info@tbitswfl.com?subject=Pricing%20request%3A%20Contracted%20IT%20Support" class="btn btn-secondary"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6.5 8.5 6.5 8.5-6.5"/></svg>Request pricing</a>
+                </article>
+                <article class="card price-card reveal">
+                    <h3>Website Management</h3>
+                    <p class="price price--quote">Request info for pricing</p>
+                    <p>Monthly subscription for continuous website management.</p>
+                    <p>Includes regular maintenance, security updates, performance optimization, and technical support for your website.</p>
+                    <a href="mailto:info@tbitswfl.com?subject=Pricing%20request%3A%20Website%20Management" class="btn btn-secondary"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6.5 8.5 6.5 8.5-6.5"/></svg>Request pricing</a>
+                </article>
+                <article class="card price-card reveal">
+                    <h3>Custom Software Solutions</h3>
+                    <p class="price price--quote">Request info for pricing</p>
+                    <p>Software or automation that is tailored to your specific needs.</p>
+                    <p>Includes consultation, development, testing, and deployment.</p>
+                    <a href="mailto:info@tbitswfl.com?subject=Pricing%20request%3A%20Custom%20Software%20Solutions" class="btn btn-secondary"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6.5 8.5 6.5 8.5-6.5"/></svg>Request pricing</a>
+                </article>
+            </div>
+            <p class="fine-print">Questions about a package? Email <a href="mailto:info@tbitswfl.com">info@tbitswfl.com</a> or <a href="book.html">book a free 15-minute assessment</a>.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="cta-panel reveal">
+                <h2>Not sure which service fits?</h2>
+                <p>Book a free 15-minute technology assessment and we'll help you figure out the right next step.</p>
+                <div class="btn-row">
+                    <a href="book.html" class="btn btn-primary btn-lg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="4.5" width="18" height="16.5" rx="2"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/></svg>Book a Free Assessment</a>
+                    <a href="mailto:info@tbitswfl.com" class="btn btn-secondary btn-lg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6.5 8.5 6.5 8.5-6.5"/></svg>Email Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-about">
+                <a class="brand" href="index.html" aria-label="TBIT SWFL home">
+                    <span class="brand-mark"><img src="logo.svg" alt="" width="40" height="40"></span>
+                    <span class="brand-text">
+                        <span class="brand-name">TBIT SWFL</span>
+                        <span class="brand-tag">Tim Birmingham Information Technology</span>
+                    </span>
+                </a>
+                <p>Practical IT support, networking, websites, automation, and technology training for homes and small businesses in Southwest Florida.</p>
+            </div>
+
+            <div>
+                <h2>Explore</h2>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="book.html">Book a Free Assessment</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h2>Contact</h2>
+                <ul class="footer-links">
+                    <li><a href="mailto:info@tbitswfl.com">info@tbitswfl.com</a></li>
+                    <li><a href="book.html">Schedule online</a></li>
+                    <li>Serving Southwest Florida</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; <span data-year>2026</span> TBIT SWFL. All Rights Reserved.</p>
+            <p>Home &amp; small-business IT services in Southwest Florida</p>
+        </div>
+    </div>
 </footer>
 
-<script>
-    const toggle = document.getElementById("menu-toggle");
-    const nav = document.getElementById("nav-menu");
-
-    // Toggle menu when hamburger clicked
-    toggle.addEventListener("click", (e) => {
-        e.stopPropagation(); // prevent triggering document click
-        nav.classList.toggle("active");
-    });
-
-    // Close menu when clicking a nav link
-    document.querySelectorAll("#nav-menu a").forEach(link => {
-        link.addEventListener("click", () => {
-            nav.classList.remove("active");
-        });
-    });
-
-    // Close menu when clicking outside of it
-    document.addEventListener("click", (e) => {
-        if (!nav.contains(e.target) && !toggle.contains(e.target)) {
-            nav.classList.remove("active");
-        }
-    });
-
-    // Close menu when resizing to desktop
-    window.addEventListener("resize", () => {
-        if (window.innerWidth > 768) {
-            nav.classList.remove("active");
-        }
-    });
-</script>
-
-    </body>
+</body>
 </html>
